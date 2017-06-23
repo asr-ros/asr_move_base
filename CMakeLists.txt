@@ -12,8 +12,8 @@ find_package(catkin REQUIRED
         nav_core
         tf
 )
-find_package(Eigen REQUIRED)
-add_definitions(${EIGEN_DEFINITIONS})
+find_package(Eigen3 REQUIRED)
+add_definitions(${Eigen3_DEFINITIONS})
 
 # dynamic reconfigure
 generate_dynamic_reconfigure_options(
@@ -29,7 +29,7 @@ catkin_package(
 include_directories(
     include
     ${catkin_INCLUDE_DIRS}
-    ${EIGEN_INCLUDE_DIRS}
+    ${Eigen3_INCLUDE_DIRS}
 )
 
 # move_base
