@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(move_base)
+project(asr_move_base)
 
 find_package(catkin REQUIRED
     COMPONENTS
